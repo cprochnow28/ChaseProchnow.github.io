@@ -25,7 +25,7 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto align-items-center">
+                    <ul class="navbar-nav ml-auto text-center">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#intro">Introduction</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#itemEngine">Item Engine</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Interfaces">Interfaces</a></li>
@@ -138,12 +138,11 @@
                             <h4>Grocery List Engine</h4>
                             <p class="text-black-50 mb-0">Once the controller and accessor had been created for the grocery List model I was tasked 
                             with creating the engine for the list. The engine is used in MVC archetichure to seperate the logic performed from the ui. The engine uses the methods 
-                            found in the accessor to create seperation between the controller and the accessor. The grocery item controller calls the grocery 
-                            item engine to use the methods that are located in grocery item accessor. This also provides an example of the Open Closed Principle 
+                            found in the accessor to create seperation between the controller and the accessor. The grocery list controller calls the grocery 
+                            lsit engine to use the methods that are located in grocery list accessor. This also provides an example of the Open Closed Principle 
                             where the controller uses the engine as an extension of the accessor so nothing can be changed or modified. You can see many of the methods in
                             the engine are similiar to the accessor functions, but a little more descriptive. This helps define the methods better so you its easier to tell which
-                            method youre using in the controllers when implementing the engine. I also was in charge of creating the interfaces for the engines (more on that later),
-                            but at the top of the engine you can see I also implemented the interface to provide dependency.</p>
+                            method youre using in the controllers when implementing the engine. You can download a copy of the List engine <a href="assets/files/GroceryListEngine.cs">here</a>.</p>
                         </div>
                     </div>
                 </div>
