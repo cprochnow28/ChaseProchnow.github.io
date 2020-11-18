@@ -111,10 +111,13 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <p class="mb-0 text-white-50">In the examples youn can see that the interfaces just include the declaration of the methods 
-                                    and their parameters from the engines. On the right is actually an example of the Grocery item accessor interface which helps 
-                                    provide abstraction and seperetion from the accessor when its getting called by the engines. I felt that overall the interfaces were 
-                                    easy to make and only deserved to be listed as 1 code piece. Below you can find the several interfaces I created.</p>
+                                    <p class="mb-0 text-white-50">In the examples you can see that the interfaces just include the declaration of the methods 
+                                    and their parameters from the engines. Interfaces are also used in the SOLID Principlesa for the Interface Segragation Principle. 
+                                    This principle says that many interfaces should be created instead one "fat" interfaces, so clients aren't forced to impolement interfaces 
+                                    that have methods they dont need or use. In this case I created an interface for each model and each engine/accessor. On the right is actually 
+                                    an example of the Grocery item accessor interface which helps provide abstraction and seperetion from the accessor when its getting called by 
+                                    the engines. I felt that overall the interfaces were easy to make and only deserved to be listed as 1 code piece. Below you can find the several 
+                                    interfaces I created.</p>
                                     <ul>
                                         <li><a href="assets/files/IGroceryItemEngine.cs">Grocery Item Engine Interface</a></li>
                                         <li><a href="assets/files/IGroceryListEngine.cs">Grocery List Engine Interface</a></li>
@@ -129,6 +132,40 @@
                 </div>
                 <!-- 2nd Featured Project Row-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="ListEngine">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/GroceryItemEngine.jpg" alt="" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Grocery List Engine</h4>
+                            <p class="text-black-50 mb-0">Once the controller and accessor had been created for the grocery List model I was tasked 
+                            with creating the engine for the list. The engine is used in MVC archetichure to seperate the logic performed from the ui. The engine uses the methods 
+                            found in the accessor to create seperation between the controller and the accessor. The grocery item controller calls the grocery 
+                            item engine to use the methods that are located in grocery item accessor. This also provides an example of the Open Closed Principle 
+                            where the controller uses the engine as an extension of the accessor so nothing can be changed or modified. You can see many of the methods in
+                            the engine are similiar to the accessor functions, but a little more descriptive. This helps define the methods better so you its easier to tell which
+                            method youre using in the controllers when implementing the engine. I also was in charge of creating the interfaces for the engines (more on that later),
+                            but at the top of the engine you can see I also implemented the interface to provide dependency.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="errorPage">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/GroceryItemEngine.jpg" alt="" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Custom Error / 404 Page</h4>
+                            <p class="text-black-50 mb-0">Once the controller and accessor had been created for the grocery item model I was tasked 
+                            with creating the engine. The engine is used in MVC archetichure to seperate the logic performed from the ui. The engine uses the methods 
+                            found in the accessor to create seperation between the controller and the accessor. The grocery item controller calls the grocery 
+                            item engine to use the methods that are located in grocery item accessor. This also provides an example of the Open Closed Principle 
+                            where the controller uses the engine as an extension of the accessor so nothing can be changed or modified. You can see many of the methods in
+                            the engine are similiar to the accessor functions, but a little more descriptive. This helps define the methods better so you its easier to tell which
+                            method youre using in the controllers when implementing the engine. I also was in charge of creating the interfaces for the engines (more on that later),
+                            but at the top of the engine you can see I also implemented the interface to provide dependency.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="testCases">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/GroceryItemEngine.jpg" alt="" /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
