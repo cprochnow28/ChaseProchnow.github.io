@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Grayscale - Start Bootstrap Theme</title>
+        <title>CSCE 361 Group 5</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -92,8 +92,8 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Engine Interfaces</h4>
-                                    <p class="mb-0 text-white-50">Because the interfaces are relatvilely small I am going to include the both the list 
+                                    <h4 class="text-white">Interfaces</h4>
+                                    <p class="mb-0 text-white-50">Because the interfaces are relatively small I am going to include both the list 
                                     and item engine interfaces, and the list and item accessor interfaces as one code piece. After creating the Engines I went ahead and created both the item and list interfaces 
                                     to go with their respective engines to provide more abstraction and seperation between the front end and back end while also 
                                     providing more modularity. This allows the devlopers to change something in the project without having it conflict with other
@@ -113,7 +113,7 @@
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <p class="mb-0 text-white-50">In the examples you can see that the interfaces just include the declaration of the methods 
                                     and their parameters from the engines. Interfaces are also used in the SOLID Principlesa for the Interface Segragation Principle. 
-                                    This principle says that many interfaces should be created instead one "fat" interfaces, so clients aren't forced to impolement interfaces 
+                                    This principle says that many interfaces should be created instead one "fat" interfaces, so clients aren't forced to implement interfaces 
                                     that have methods they dont need or use. In this case I created an interface for each model and each engine/accessor. On the right is actually 
                                     an example of the Grocery item accessor interface which helps provide abstraction and seperetion from the accessor when its getting called by 
                                     the engines. I felt that overall the interfaces were easy to make and only deserved to be listed as 1 code piece. Below you can find the several 
@@ -136,12 +136,12 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Grocery List Engine</h4>
-                            <p class="text-black-50 mb-0">Once the controller and accessor had been created for the grocery List model I was tasked 
+                            <p class="text-black-50 mb-0">Once the controller and accessor had been created for the grocery list model I was tasked 
                             with creating the engine for the list. The engine is used in MVC archetichure to seperate the logic performed from the ui. The engine uses the methods 
                             found in the accessor to create seperation between the controller and the accessor. The grocery list controller calls the grocery 
-                            lsit engine to use the methods that are located in grocery list accessor. This also provides an example of the Open Closed Principle 
+                            list engine to use the methods that are located in grocery list accessor. This also provides an example of the Open Closed Principle 
                             where the controller uses the engine as an extension of the accessor so nothing can be changed or modified. You can see many of the methods in
-                            the engine are similiar to the accessor functions, but a little more descriptive. This helps define the methods better so you its easier to tell which
+                            the engine are similiar to the accessor functions, but a little more descriptive. This helps define the methods better so it's easier to tell which
                             method youre using in the controllers when implementing the engine. You can download a copy of the List engine <a href="assets/files/GroceryListEngine.cs">here</a>.</p>
                         </div>
                     </div>
@@ -152,14 +152,14 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Custom Error / 404 Page</h4>
-                            <p class="text-black-50 mb-0">Once the controller and accessor had been created for the grocery item model I was tasked 
-                            with creating the engine. The engine is used in MVC archetichure to seperate the logic performed from the ui. The engine uses the methods 
-                            found in the accessor to create seperation between the controller and the accessor. The grocery item controller calls the grocery 
-                            item engine to use the methods that are located in grocery item accessor. This also provides an example of the Open Closed Principle 
-                            where the controller uses the engine as an extension of the accessor so nothing can be changed or modified. You can see many of the methods in
-                            the engine are similiar to the accessor functions, but a little more descriptive. This helps define the methods better so you its easier to tell which
-                            method youre using in the controllers when implementing the engine. I also was in charge of creating the interfaces for the engines (more on that later),
-                            but at the top of the engine you can see I also implemented the interface to provide dependency.</p>
+                            <p class="text-black-50 mb-0">This is 1 of the only front end peices of code I worked on and it is just a simple custom 404 page that 
+                            allows lost users to better understand what happened and use links loacted on the page to navigate back to the intended features. 
+                            If you attempt to go to a page that either doesn't exist or is missing then you will end up on the custom 404 page. I would say this 
+                            is related to a few topics that we had talked about during class. The first one being security since you want to cover all the edge 
+                            cases to prevent poeple from breaking your software by doing something the devolper had not thought of. The second topic from class 
+                            it touches is UI design because the custom 404 page will easily allow lost users to navigate back to the inteded features using the 
+                            links on the page. Finally, the third topic that I think it is somewhat related to is unit testing because this allows us to write unit 
+                            tests and determine if the controllers correctly handle an error. You can download and view the code for the custom error page <a href="assets/files/">here<h/a>.</p>
                         </div>
                     </div>
                 </div>
@@ -168,15 +168,13 @@
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/GroceryItemEngine.jpg" alt="" /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Grocery Item Engine</h4>
-                            <p class="text-black-50 mb-0">Once the controller and accessor had been created for the grocery item model I was tasked 
-                            with creating the engine. The engine is used in MVC archetichure to seperate the logic performed from the ui. The engine uses the methods 
-                            found in the accessor to create seperation between the controller and the accessor. The grocery item controller calls the grocery 
-                            item engine to use the methods that are located in grocery item accessor. This also provides an example of the Open Closed Principle 
-                            where the controller uses the engine as an extension of the accessor so nothing can be changed or modified. You can see many of the methods in
-                            the engine are similiar to the accessor functions, but a little more descriptive. This helps define the methods better so you its easier to tell which
-                            method youre using in the controllers when implementing the engine. I also was in charge of creating the interfaces for the engines (more on that later),
-                            but at the top of the engine you can see I also implemented the interface to provide dependency.</p>
+                            <h4>Grocery Item Accessor test case</h4>
+                            <p class="text-black-50 mb-0">I also was tasked with creating test cases for many methods and features that are web app offers.
+                            One of the the first test cases I wrote was for the accessors and so I wanted to use it here. However, by the time I am writing this
+                            for the portfolio the final code has not been submitted yet so we have a more test cases to write. This obviously shows the topic of unit
+                            testing that we had look at in class. In this code piece I had another team member create some mock data in a sql query to populate the 
+                            database before I test the functionality of the accessor grabbing the data. You can download and view the grocery item accessor test <a href="assets/files/">here</a>.
+                            </p>
                         </div>
                     </div>
                 </div>
