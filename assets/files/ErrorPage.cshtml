@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "ErrorPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>404 Error</h2>
+
+<body>
+    <div>
+    <p>Sorry, but there seems to be an issue finding that page.</p>
+    @Html.ActionLink("Click here to return your lists", "Index", "GroceryLists", null, null)
+    </div>
+    <div><img src="~/Content/Images/ListLlama.png" /></div>
+</body>
+
+
