@@ -40,7 +40,7 @@
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
-                    <h1 class="text-white text-uppercase">CSCE 361 G5 Project</h1>
+                    <h1 class="text-white-50 text-uppercase">CSCE 361 G5 Project</h1>
                     <h2 class="text-white mx-auto">A grocery list web app, called List Llama, that provides the ablity to create lists and add items to help keep track of what the users
                         need on their next trip to the grocery store.</h2>
                     <a class="btn btn-primary js-scroll-trigger" href="https://listllama.azurewebsites.net/">Go to Web App</a>
@@ -57,7 +57,7 @@
                             List Llama is a grocery list Web App created by Anders Long, Chase Prochnow, Natalie Ruckman and Trevor Ives for UNL's Fall 2020 CSCE 361 Class.
                             The web app was created using the asp.net technology stack, SQL and Azure to build, store and host the project. I worked mostly on the backend except for
                             several times where I implemented small features to the ui. You can take a look at 
-                            <a href="https://startbootstrap.com/theme/grayscale/">the project repo</a>
+                            <a href="https://github.com/tives2000/361Project">the project repo</a>
                             to see all the hardwork Group 5 and I put into our project!
                         </p>
                     </div>
@@ -80,7 +80,7 @@
                             item engine to use the methods that are located in grocery item accessor. This also provides an example of the Open Closed Principle 
                             where the controller uses the engine as an extension of the accessor so nothing can be changed or modified. You can see many of the methods in
                             the engine are similiar to the accessor functions, but a little more descriptive. This helps define the methods better so its easier to tell which
-                            method youre using in the controllers when implementing the engine. I also was in charge of creating the interfaces for the engines (more on that later),
+                            method you're using in the controllers when implementing the engine. I also was in charge of creating the interfaces for the engines (more on that later),
                             but at the top of the engine you can see I also implemented the interface to provide dependency. You can download a copy of the Item engine <a href="assets/files/GroceryItemEngine.cs">here</a>.</p>
                         </div>
                     </div>
@@ -110,12 +110,12 @@
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <p class="mb-0 text-white-50">In the examples you can see that the interfaces just include the declaration of the methods 
-                                    and their parameters from the engines. Interfaces are also used in the SOLID Principlesa for the Interface Segragation Principle. 
-                                    This principle says that many interfaces should be created instead one "fat" interfaces, so clients aren't forced to implement interfaces 
-                                    that have methods they dont need or use. In this case I created an interface for each model and each engine/accessor. On the right is actually 
-                                    an example of the Grocery item accessor interface which helps provide abstraction and seperetion from the accessor when its getting called by 
+                                    and their parameters from the engines. Interfaces are also used in the SOLID Principles for the Interface Segragation Principle. 
+                                    This principle says that many interfaces should be created instead one "fat" interface, so clients aren't forced to implement interfaces 
+                                    that have methods they don't need or use. In this case I created an interface for each model and each engine/accessor. On the right is actually 
+                                    an example of the Grocery item accessor interface which helps provide abstraction and seperation from the accessor when its getting called by 
                                     the engines. I felt that overall the interfaces were easy to make and only deserved to be listed as 1 code piece. Below you can find the several 
                                     interfaces I created.</p>
                                     <ul>
@@ -137,12 +137,12 @@
                         <div class="featured-text text-center text-lg-left">
                             <h4>Grocery List Engine</h4>
                             <p class="text-black-50 mb-0">Once the controller and accessor had been created for the grocery list model I was tasked 
-                            with creating the engine for the list. The engine is used in MVC archetichure to seperate the logic performed from the ui. The engine uses the methods 
+                            with creating the engine for the list. The engine is used in MVC architechure to seperate the logic performed from the ui. The engine uses the methods 
                             found in the accessor to create seperation between the controller and the accessor. The grocery list controller calls the grocery 
                             list engine to use the methods that are located in grocery list accessor. This also provides an example of the Open Closed Principle 
                             where the controller uses the engine as an extension of the accessor so nothing can be changed or modified. You can see many of the methods in
                             the engine are similiar to the accessor functions, but a little more descriptive. This helps define the methods better so it's easier to tell which
-                            method youre using in the controllers when implementing the engine. You can download a copy of the List engine <a href="assets/files/GroceryListEngine.cs">here</a>.</p>
+                            method you're using in the controllers when implementing the engine. You can download a copy of the List engine <a href="assets/files/GroceryListEngine.cs">here</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -153,11 +153,11 @@
                         <div class="featured-text text-center text-lg-left">
                             <h4>Custom Error / 404 Page</h4>
                             <p class="text-black-50 mb-0">This is 1 of the only front end peices of code I worked on and it is just a simple custom 404 page that 
-                            allows lost users to better understand what happened and use links loacted on the page to navigate back to the intended features. 
+                            allows lost users to better understand what happened and use links located on the page to navigate back to the intended features. 
                             If you attempt to go to a page that either doesn't exist or is missing then you will end up on the custom 404 page. I would say this 
                             is related to a few topics that we had talked about during class. The first one being security since you want to cover all the edge 
                             cases to prevent poeple from breaking your software by doing something the devolper had not thought of. The second topic from class 
-                            it touches is UI design because the custom 404 page will easily allow lost users to navigate back to the inteded features using the 
+                            it touches is UI design because the custom 404 page will easily allow lost users to navigate back to the intended features using the 
                             links on the page. Finally, the third topic that I think it is somewhat related to is unit testing because this allows us to write unit 
                             tests and determine if the controllers correctly handle an error. You can download and view the code for the custom error page <a href="assets/files/ErrorPage.cshtml">here</a>.</p>
                         </div>
@@ -169,7 +169,7 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Grocery Item Accessor test case</h4>
-                            <p class="text-black-50 mb-0">I also was tasked with creating test cases for many methods and features that are web app offers.
+                            <p class="text-black-50 mb-0">I also was tasked with creating test cases for many methods and features that our web app offers.
                             One of the the first test cases I wrote was for the accessors during assignment 5 and so I wanted to use it here. However, by the time I am writing this
                             for the portfolio the final code has not been submitted yet so we have a more test cases to write. This obviously shows the topic of unit
                             testing that we had look at in class. In this code piece I had another team member create some mock data in an sql query to populate the 
